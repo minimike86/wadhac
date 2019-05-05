@@ -6,8 +6,8 @@ The website for a dummy company I made to demonstrate OSINT tools and to serve a
 
 www.wadhac.me.uk
 
-Shodan
+# Shodan
 https://www.shodan.io/host/81.4.122.206
 
-Security Report Summary
+# Security Report Summary
 https://securityheaders.com/?q=https%3A%2F%2Fwadhac-939ac.firebaseapp.com%2F&followRedirects=on
