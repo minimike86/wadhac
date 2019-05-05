@@ -1,0 +1,25 @@
+<nav class="navbar navbar-default navbar-fixed-top navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <img class="mr-2" src="../../assets/images/taplogosmall.png">
+    <a class="navbar-brand" [routerLink]="['/index']">Wadhac Ltd.</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor03">
+      <ul class="navbar-nav mr-auto">
+        <li class="mr-3"><a class="nav-link nav-item" [routerLink]="['/index']">Home</a></li>
+        <li class="mr-3"><a class="nav-link nav-item" [routerLink]="['/about']">About</a></li>
+        <li class="mr-3"><a class="nav-link nav-item" [routerLink]="['/contact']">Contact</a></li>
+        <li class="mr-3"><a class="nav-link nav-item" [routerLink]="['/product']">Product</a></li>
+        <li ngbDropdown class="nav-item dropdown">
+          <a ngbDropdownToggle class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Case Studies<span class="caret"></span></a>
+          <ul ngbDropdownMenu class="dropdown-menu">
+            <li><a class="nav-link dropdown-item" [routerLink]="['/casestudy1']">Android Lollipop Mobile OS</a></li>
+            <li><a class="nav-link dropdown-item" [routerLink]="['/casestudy2']">Microsoft Edge Browser</a></li>
+            <li><a class="nav-link dropdown-item" [routerLink]="['/casestudy3']">Symantec Encryption Management Server</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>

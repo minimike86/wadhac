@@ -1,0 +1,146 @@
+<!-- MAIN CONTENT -->
+<div class="jumbotron" style="background: #eee url('../../assets/images/riskreport1.jpg') 50% 45% repeat-x;">
+  <div class="container">
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <h1 style="color: #fff;">Wadhac Ltd.</h1>
+    <p style="color: #fff;">Delivering pro-active integrated and holistic solutions to our customer's risk portfolio needs<br/>through re-engineered and measurable business processes!</p>
+    <p>&nbsp;</p>
+  </div>
+</div>
+<div style="background-color: #EEE;">
+</div>
+<!-- MENU -->
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12" style="text-align: justify;">
+      <h3>S.C.R.U.T.I.N.Y. Engine<sup style="font-size: .4em; vertical-align: top; line-height: 2.2em;">&reg;</sup></h3>
+    </div>
+    <div class="col-xs-12" style="text-align: justify;">
+      <p>The <span class="text-muted">S.C.R.U.T.I.N.Y. Engine&reg;</span> is our flagship proprietary risk reporting and 'big-data' network analytics product. It is a revolutionary product with many great exclusive <strong><span class="text-primary">patented</span></strong> features that has made us the envy of our competitors as a result of our technology placing us light-years ahead of the competiton.
+    </div>
+    <div class="row w-100">
+      <div class="d-flex flex-fill justify-content-center my-5">
+        <div class="w-100" style="display: block">
+          <canvas baseChart
+                  [datasets]="radarChartData.datasets"
+                  [labels]="radarChartData.labels"
+                  [chartType]="radarChartType">
+          </canvas>
+        </div>
+        <div class="w-100" style="display: block;">
+          <canvas baseChart
+                  [datasets]="lineChartData.datasets"
+                  [labels]="lineChartData.labels"
+                  [chartType]="lineChartType"></canvas>
+        </div>
+        <div class="w-100" style="display: block">
+          <canvas baseChart
+                  [data]="doughnutChartData"
+                  [labels]="doughnutChartLabels"
+                  [chartType]="doughnutChartType">
+          </canvas>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12" style="text-align: justify;">
+      <p><span class="text-muted">S.C.R.U.T.I.N.Y. Engine&reg;</span> enables agility within your business by providing authorised members of your staff with online access to your highly-confidential risk assessment data. Once authenticated we present your data via a clean and concise live dashboard where through our expert analysis you can view your organizations information security strengths and weaknesses.</p>
+    </div>
+    <div class="flex-fill my-5">
+      <div class="d-flex justify-content-center">
+        <div class="mx-3" style="text-align: center;">
+          <h2>S</h2>
+          <p>Security</p>
+        </div>
+        <div class="mx-3" style="text-align: center;">
+          <h2>C</h2>
+          <p>Confidence</p>
+        </div>
+        <div class="mx-3" style="text-align: center;">
+          <h2>R</h2>
+          <p>Report</p>
+        </div>
+        <div class="mx-3" style="text-align: center;">
+          <h2>U</h2>
+          <p>Unifying</p>
+        </div>
+        <div class="mx-3" style="text-align: center;">
+          <h2>T</h2>
+          <p>Trends</p>
+        </div>
+        <div class="mx-3" style="text-align: center;">
+          <h2>I</h2>
+          <p>Intrusion</p>
+        </div>
+        <div class="mx-3" style="text-align: center;">
+          <h2>N</h2>
+          <p>Network</p>
+        </div>
+        <div class="mx-3" style="text-align: center;">
+          <h2>Y</h2>
+          <p>discoverY</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12" style="text-align: justify;">
+      <p><span class="text-muted">S.C.R.U.T.I.N.Y. Engine&reg;</span> works by automating the collection of threat intelligence (likelihood), business impact for the automatic calculation of <span class="text-danger">Inherent Risk</span>. It also collects data from your companies various mitigating controls such as firewalls, proxies, honeypots, intrusion detection systems, security information event management, etc to determine your businesses <span class="text-success">Residual Risk</span>.</p>
+    </div>
+    <table class="table table-striped table-hover">
+      <thead>
+      <tr>
+        <th>#</th>
+        <th>Threat</th>
+        <th>Risk</th>
+        <th>Risk Change</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>1</td>
+        <td>Cyber-extortion Hit Wearables, Medical Devices and Gaming Systems</td>
+        <td><span class="text-danger">High <fa-icon [icon]="faTimesCircle"></fa-icon></span></td>
+        <td><span class="text-danger">Up <fa-icon [icon]="faLevelUpAlt"></fa-icon></span></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Hackers Target Cloud Providers</td>
+        <td><span class="text-success">Low <fa-icon [icon]="faCheckCircle"></fa-icon></span></td>
+        <td><span class="text-success">Down <fa-icon [icon]="faLevelDownAlt"></fa-icon></span></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Millennials Care More About Privacy Breaches</td>
+        <td><span class="text-warning">Medium <fa-icon [icon]="faExclamationTriangle"></fa-icon></span></td>
+        <td><span class="text-danger">Up <fa-icon [icon]="faLevelUpAlt"></fa-icon></span></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Mobile Malware and Malvertising Will Cause Mayhem</td>
+        <td><span class="text-danger">High <fa-icon [icon]="faTimesCircle"></fa-icon></span></td>
+        <td><span class="text-success">Down <fa-icon [icon]="faLevelDownAlt"></fa-icon></span></td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Cybersecurity Will be the &quot;It&quot; Job of IT</td>
+        <td><span class="text-danger">High <fa-icon [icon]="faTimesCircle"></fa-icon></span></td>
+        <td><span class="text-danger">Up <fa-icon [icon]="faLevelUpAlt"></fa-icon></span></td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Ransomware-as-a-service</td>
+        <td><span class="text-danger">High <fa-icon [icon]="faTimesCircle"></fa-icon></span></td>
+        <td><span class="text-danger">Up <fa-icon [icon]="faLevelUpAlt"></fa-icon></span></td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>Automobile engine control units (ECUs) systems fail to meet best practice security policies.</td>
+        <td><span class="text-warning">Medium <fa-icon [icon]="faExclamationTriangle"></fa-icon></span></td>
+        <td><span class="text-success">Down <fa-icon [icon]="faLevelDownAlt"></fa-icon></span></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
